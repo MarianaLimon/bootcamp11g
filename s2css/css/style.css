@@ -1,0 +1,95 @@
+h1{
+    color: peru;
+}
+
+h1{
+    color: slategray;
+}
+
+.text-italic{
+    font-style: italic;
+}
+
+li{
+    text-decoration: underline;
+}
+
+/*selector por anidacion*/
+
+#lista-1 li{
+    background-color: #acacac;
+}
+
+/*
+Concatenacion con " , "
+#lista-1 li, #lista-1 p{
+    background-color: #acacac;
+}
+*/
+/* nietos */
+#lista-1 li ul li{
+    color: blue;
+}
+/* hijos*/
+#lista-1 > li{
+    background: peru;
+}
+
+.lista-tipo-2 li.active{
+    background: skyblue;
+    padding: 1rem;
+}
+
+
+/* seleccionar elemento inmediato = selector de sucesor */
+.lista-tipo-2 li.active ~ li{
+    background-color: lightcoral;
+}
+
+/* seleccionar elemento inmediato = selector de sucesor adyacente*/
+.lista-tipo-2 li.active + li{
+    background-color: purple;
+}
+
+.lista-tipo-3 li + li{
+    background-color: lime;
+}
+
+/* 
+.lista-tipo-3 li:nth-of-type(3){
+    font-size: 25px;
+}
+*/
+
+.lista-tipo-3 li:nth-of-type(odd){
+    font-size: 25px;
+}
+.lista-tipo-3 li:nth-of-type(even){
+    font-size: 8px;
+}
+
+.lista-tipo-4 li:nth-of-type(4n){
+    background-color: magenta;
+}
+
+.lista-tipo-5 li:nth-of-type(3n + 7){
+    background-color: cyan;
+}
+
+.lista-tipo-5 li:first-of-type{
+    background-color: red;
+}
+
+.lista-tipo-5 li:last-of-type{
+    background-color: lightcoral;
+}
+
+.lista-tipo-6 li:not(:last-of-type){
+    background-color: lightcoral;
+}
+
+/*
+.lista-tipo-6 li:not(:first-of-type){
+    background-color: lightcoral;
+}
+*/
