@@ -1,0 +1,20 @@
+.square{
+    height: 100px;
+    width: 100px;
+}
+
+.w-100{
+    width: auto;
+}
+
+.text-white{
+    color: white;
+}
+
+.bg-red{
+    background-color: darkred;
+}
+
+.bg-blue{
+    background-color: lightblue;
+}
