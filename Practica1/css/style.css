@@ -1,0 +1,49 @@
+*{
+    text-align: center;
+}
+h1, h3{
+    background-color: #FFC9C8;
+    padding: 20px;
+    margin: 0;
+}
+
+h3{
+    margin: 3px 0px;
+}
+
+nav{
+    background-color: #C4F1FF;
+    padding: 20px;
+}
+div{
+    background-color: #4F81BD;  
+    padding: 5px;
+    height: 245px;
+}
+
+section{
+    background-color: #F3FFE1; 
+    padding: 5px;
+    width: 70%;
+    height: auto;
+    float: left;
+}
+
+aside{
+    background-color: #CBCBCB;
+    padding: 5px;
+    width: 28%;
+    height: 230px;
+    float: right;
+    border: solid 2px;
+}
+
+article{
+    background-color: #E6DDF5;
+    padding: 20px;
+}
+
+footer{
+    background-color: #FFCA9E; 
+    padding: 17px;
+}
