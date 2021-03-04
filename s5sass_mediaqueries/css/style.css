@@ -1,0 +1,53 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #acacac;
+  -webkit-box-shadow: 3px 3px spx #ccc;
+          box-shadow: 3px 3px spx #ccc;
+}
+
+.card .nme {
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.card .btn {
+  padding: 1rem;
+  width: 100%;
+  border: none;
+  border-radius: 1rem;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(236, hsl), color-stop(63%), color-stop(64%), color-stop(237, hls), color-stop(63%), to(64%));
+  background-image: linear-gradient(hsl 236, 63%, 64%, hls 237, 63%, 64%);
+  -webkit-transition: background-image .5s linear;
+  transition: background-image .5s linear;
+}
+
+.card .btn span {
+  text-decoration: underline;
+}
+
+.card .btn:hover {
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(237, hsl), color-stop(63%), color-stop(64%), color-stop(236), color-stop(63%), to(64%));
+  background-image: linear-gradient(hsl 237, 63%, 64%, 236, 63%, 64%);
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */
