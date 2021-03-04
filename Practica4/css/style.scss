@@ -1,0 +1,92 @@
+*{
+    font-family: 'Public Sans', sans-serif;
+    box-sizing: border-box;
+}
+$Dark-Blue: hsl(233, 26%, 24%);
+$Lime-Green: hsl(136, 65%, 51%);
+$Bright-Cyan: hsl(192, 70%, 51%);
+
+$Grayish-Blue: hsl(233, 8%, 62%);
+$Light-Grayish-Blue: hsl(220, 16%, 96%);
+$Very-Light-Gray: hsl(0, 0%, 98%);
+$White: hsl(0, 0%, 100%);
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.container{
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 2% 10%;
+    padding: 10px;
+}
+
+.header{
+    background-color: black;
+    display: flex;
+    flex-flow: column nowrap;
+    .menu{
+        background: #fff;
+        display: flex;
+        flex-flow: row nowrap;
+        height: 50px;
+        align-items: center;
+        .nav{display: none;}
+        .logo{
+            flex: 1 1 auto;
+           
+        }
+        
+    }
+    .banner{
+        background: url(../images/bg-intro-mobile.svg);
+        background-attachment: contain;
+        background-size: cover;
+        h1{
+            background: #ffd460;
+        }
+    }
+}
+
+.d-flex{ display: flex; }
+
+.justify-center{ justify-content: center; }
+
+.align-center{ align-items: center; }
+
+
+@media only screen and ( min-width: 992px ){
+    .hamburguesa{
+    display: none;
+    }
+    .menu{
+        .nav{
+            flex: 5 1 auto;
+            display: block;
+            a{
+                padding-left: 10px;
+                padding-right: 10px;
+                font-size: 14px;
+                &:hover{
+                    border-bottom: solid $Lime-Green 3px;
+                    padding: 11px;
+                }
+            }
+        }
+        .boton{
+            flex: 1 1 auto;
+        .nav-btn{
+            background-image: linear-gradient(to right, $Lime-Green , $Bright-Cyan);
+            border: 0px;
+            border-radius: 25px;
+            color: #fff;
+            font-size: 12px;
+            padding: 5px 20px;
+            &:hover{
+                background-image: linear-gradient(to right, $Bright-Cyan ,$Lime-Green);
+                cursor: pointer
+            }
+        }
+        }
+    }
+}
