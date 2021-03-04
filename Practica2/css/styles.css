@@ -1,0 +1,73 @@
+.bg-red{background-color: red;}
+.bg-peru{background-color: peru;}
+.bg-navy{background-color: navy;}
+.bg-purple{background-color: purple;}
+
+.mr{margin-right: 8px;}
+.ml{margin-left: 8px;}
+
+.wrapper{
+    width:98vw;
+    height:50vh;
+    border: solid 2px #333;
+}
+
+.d-flex{
+    display:flex
+}
+
+.justify-center{
+    justify-content: center;
+}
+
+.justify-between{
+    justify-content: space-between;
+}
+
+.justify-end{
+    justify-content: flex-end;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.square{
+    width:70px;
+    height: 70px;
+}
+
+.wrapper-inner{
+    padding: 10px;
+}
+
+.flex-direction-column{
+    flex-direction: column;
+}
+ 
+.item{
+    width: 50px;
+}
+
+.justify-around{
+    justify-content: space-around;
+}
+
+.nivel1{
+    width: 15%;
+    height: 65px;
+}
+
+.nivel1-5{
+    width: 70%;
+    height: 65px;
+}
+.nivel2{
+    width: 50%;
+    height: 125px;
+}
+
+.nivel3{
+    width: 100%;
+    height: 65px;
+}
