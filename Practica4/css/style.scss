@@ -32,7 +32,7 @@ p{
     margin-top: 5%;
     &.copy{
         font-size: 11px;
-        color: #fff;
+        color: $Grayish-Blue;
     }
 }
 
@@ -132,7 +132,7 @@ body{
         }
     }
     .imagen-flotante{
-        width: 93%;
+        width: 92%;
         margin-top: -120px;
         @media screen and (min-width: 992px){
             width: 650px;
@@ -147,11 +147,20 @@ body{
     border: 0px;
     border-radius: 25px;
     color: #fff;
-    font-size: 12px;
+    font-size: 18px;
     padding: 10px 30px;
-    &:hover{
-     background-image: linear-gradient(to right, $Bright-Cyan ,$Lime-Green);
-     cursor: pointer;
+    
+    @media screen and (min-width: 992px){
+        background-image: linear-gradient(to right, $Lime-Green , $Bright-Cyan);
+        border: 0px;
+        border-radius: 25px;
+        color: #fff;
+        font-size: 12px;
+        padding: 10px 30px;
+        &:hover{
+        background-image: linear-gradient(to right, $Bright-Cyan ,$Lime-Green);
+        cursor: pointer;
+    }
     }
 }
 
