@@ -1,0 +1,80 @@
+.layout1 .row div {
+  height: 90px;
+  margin: 5px 0;
+  border: solid 3px;
+}
+
+.layout1 .row div.orange {
+  border-color: orange;
+}
+
+.layout1 .row div.peru {
+  border-color: peru;
+}
+
+.layout1 .row div.blue {
+  border-color: blue;
+}
+
+.layout1 .row div.purple {
+  border-color: purple;
+}
+
+.layout1 .row div.pink {
+  border-color: pink;
+}
+
+.layout1 .row div.green {
+  border-color: green;
+}
+
+.layout1 .row div.yellow {
+  border-color: #ffff16;
+}
+
+.layout1 .row div.red {
+  border-color: red;
+}
+
+.layout2 .row div div {
+  height: 90px;
+  margin: 5px 0;
+  border: solid 3px;
+}
+
+.layout2 .row div div.orange {
+  border-color: orange;
+}
+
+.layout2 .row div div.peru {
+  border-color: peru;
+}
+
+.layout2 .row div div.blue {
+  border-color: blue;
+}
+
+.layout2 .row div div.purple {
+  border-color: purple;
+}
+
+.layout2 .row div div.pink {
+  border-color: pink;
+}
+
+.layout2 .row div div.green {
+  border-color: green;
+}
+
+.layout2 .row div div.yellow {
+  border-color: #ffff16;
+}
+
+.layout2 .row div div.red {
+  border-color: red;
+}
+
+.layout2 .row div div.magenta {
+  border-color: magenta;
+}
+/*# sourceMappingURL=style.css.map */

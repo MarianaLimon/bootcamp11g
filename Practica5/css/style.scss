@@ -1,0 +1,72 @@
+.layout1{
+    .row{
+        div{
+            height: 90px;
+            margin: 5px 0;
+            border: solid 3px;
+            &.orange{
+                border-color:orange;
+            }
+            &.peru{
+                border-color:peru;
+            }
+            &.blue{
+                border-color:blue;
+            }
+            &.purple{
+                border-color:purple;
+            }
+            &.pink{
+                border-color:pink;
+            }
+            &.green{
+                border-color:green;
+            }
+            &.yellow{
+                border-color: rgb(255, 255, 22);
+            }
+            &.red{
+                border-color: red;
+            }
+        }
+    }
+}
+
+.layout2{
+    .row{
+        div{
+            div{
+                height: 90px;
+                margin: 5px 0;
+                border: solid 3px;
+                &.orange{
+                    border-color:orange;
+                }
+                &.peru{
+                    border-color:peru;
+                }
+                &.blue{
+                    border-color:blue;
+                }
+                &.purple{
+                    border-color:purple;
+                }
+                &.pink{
+                    border-color:pink;
+                }
+                &.green{
+                    border-color:green;
+                }
+                &.yellow{
+                    border-color: rgb(255, 255, 22);
+                }
+                &.red{
+                    border-color: red;
+                }
+                &.magenta{
+                    border-color:magenta;
+                }
+            }
+        }
+    }
+}
