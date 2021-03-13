@@ -1,0 +1,82 @@
+.ball {
+  border-radius: 50%;
+  background-color: brown;
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  top: calc(50% - 12.5px);
+  -webkit-animation-name: animation-ball;
+          animation-name: animation-ball;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  left: 0%;
+}
+
+.container {
+  width: 800px;
+  height: 400px;
+  border: 2px solid green;
+  padding: calc(1rem + 5px);
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
+@-webkit-keyframes animation-ball {
+  0% {
+    top: calc(50% - 12.5px);
+    left: calc(5px + 1rem);
+  }
+  25% {
+    top: 0;
+    left: calc(50% - 12.5px);
+  }
+  50% {
+    top: calc(50% - 12.5px);
+    left: calc(100% - 30px - 1rem);
+  }
+  75% {
+    top: calc(100% - 25px);
+    left: calc(50% - 12.5px);
+  }
+  100% {
+    left: calc(5px + 1rem);
+    top: calc(50% - 12.5px);
+  }
+}
+
+@keyframes animation-ball {
+  0% {
+    top: calc(50% - 12.5px);
+    left: calc(5px + 1rem);
+  }
+  25% {
+    top: 0;
+    left: calc(50% - 12.5px);
+  }
+  50% {
+    top: calc(50% - 12.5px);
+    left: calc(100% - 30px - 1rem);
+  }
+  75% {
+    top: calc(100% - 25px);
+    left: calc(50% - 12.5px);
+  }
+  100% {
+    left: calc(5px + 1rem);
+    top: calc(50% - 12.5px);
+  }
+}
+/*# sourceMappingURL=style.css.map */
