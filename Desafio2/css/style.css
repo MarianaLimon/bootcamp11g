@@ -13,6 +13,10 @@ img {
   width: 100% !important;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 .container-main {
   padding-top: 70px;
 }
@@ -134,17 +138,25 @@ img {
 .btn-top-bar:hover {
   background-color: #323ebe !important;
   cursor: pointer;
+  color: white;
 }
 
 /*Article*/
 .my-card-article .avatar-post {
   margin-left: 0px;
   margin-right: 0px;
+  padding-bottom: 0.5rem !important;
 }
 
 .my-card-article .text-avatar-post {
   margin-top: auto;
   margin-bottom: auto;
+  opacity: 80%;
+  color: #202428 !important;
+}
+
+.my-card-article .text-avatar-post:hover {
+  opacity: 100%;
 }
 
 .my-card-article .avatar-post .jb-img-avatar {
@@ -156,9 +168,72 @@ img {
   margin-bottom: auto;
 }
 
+.my-card-article .f-14 {
+  margin-bottom: 0px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #202428;
+}
+
 .my-card-article .f-12 {
   margin-bottom: 0px;
-  font-size: 12px;
+  font-size: 11px;
+}
+
+.my-card-article .comment-article {
+  width: 70%;
+  height: auto;
+}
+
+.my-card-article .text-avatar-comment {
+  margin-top: auto;
+  margin-bottom: auto;
+  opacity: 80%;
+  color: #202428 !important;
+}
+
+.my-card-article .text-avatar-comment:hover {
+  opacity: 100%;
+}
+
+.my-card-article .avatar-post-comment .f-14 {
+  margin-bottom: 0px;
+  font-size: 12px !important;
+  font-weight: 600;
+  color: #202428;
+}
+
+.my-card-article .avatar-post-comment .f-12 {
+  margin-bottom: 0px;
+  font-size: 10px;
+  color: #202428;
+}
+
+.my-card-article .avatar-post-comment .jb-img-avatar {
+  width: 25px !important;
+  height: 25px !important;
+  margin-left: 0px;
+  margin-right: 5px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.my-card-article .avatar-comment {
+  font-size: small;
+  margin-left: 2rem;
+}
+
+.my-card-article .likes-hover-comment {
+  font-size: .8rem;
+  color: #4d5766;
+  font-weight: 400;
+  margin-left: 2rem;
+}
+
+.my-card-article .likes-hover-comment:hover {
+  background-color: #d2d6db;
+  border-radius: 8px;
+  color: #08090a;
 }
 
 .my-card-article .title-articleFull {
@@ -191,7 +266,7 @@ img {
 
 .my-card-article .mention-article {
   margin-left: 1rem;
-  font-size: 14px;
+  font-size: .8rem;
 }
 
 .my-card-article .mention-article a {
@@ -207,6 +282,63 @@ img {
 .my-card-article .btn-article {
   margin-right: 20px;
   height: 30px;
+}
+
+.my-card-article .yellow {
+  background-color: yellow;
+  opacity: 60%;
+  color: orangered !important;
+}
+
+.my-card-article .blue {
+  background-color: lightblue;
+  opacity: 60%;
+  color: navy !important;
+}
+
+.my-card-article .green {
+  background-color: lightgreen;
+  opacity: 70%;
+  color: darkslategray;
+}
+
+.my-card-article .inside-article {
+  margin-left: .1rem;
+}
+
+.my-card-article .likes svg {
+  opacity: 70%;
+}
+
+.my-card-article .likes h4 {
+  color: #4d5766;
+  font-weight: 400;
+  font-size: .9rem;
+}
+
+.my-card-article .likes h3 {
+  display: none;
+}
+
+.my-card-article .likes a h5 {
+  font-size: .6rem;
+  color: #4d5766;
+  font-weight: 400;
+}
+
+.my-card-article .likes a button {
+  background-color: #d2d6db;
+  font-size: smaller;
+  border-style: none;
+  font-weight: 370;
+  letter-spacing: .5;
+  padding: .3rem .6rem;
+  -webkit-box-shadow: 1px 1px 1px #eef0f1;
+          box-shadow: 1px 1px 1px #eef0f1;
+}
+
+.my-card-article .likes a button:hover {
+  background-color: #94999e;
 }
 
 /*aside*/
@@ -301,6 +433,7 @@ img {
 .my-footer {
   background-color: #d2d6db;
   padding: 20px;
+  padding-bottom: 60px;
 }
 
 .my-footer .my-footer-container {
@@ -360,12 +493,66 @@ img {
 }
 
 @media screen and (min-width: 700px) {
+  .my-footer {
+    padding-bottom: 10px;
+  }
   .main-menu .logo-navbar {
     margin-left: 0px;
   }
   .search-bar {
     width: 300px;
     margin-left: -70px;
+  }
+  .likes-hover:hover {
+    background-color: #f4f4fa;
+    border-radius: 8px;
+    color: #08090a;
+  }
+  .likes-hover h4 {
+    color: #4d5766;
+    font-weight: 400;
+    font-size: 0.8rem !important;
+  }
+  .likes-hover h3 {
+    color: #4d5766;
+    font-weight: 400;
+    font-size: .8rem;
+    display: initial !important;
+  }
+  .likes-hover a h5 {
+    font-size: .7rem;
+    color: #4d5766;
+    font-weight: 400;
+  }
+  .title-articleFull {
+    color: #08090a;
+    font-size: 27px !important;
+    font-weight: bold;
+    margin: 0px;
+    margin-left: 3rem !important;
+    margin-right: 3rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  .button {
+    height: 100%;
+    background-color: #d2d6db;
+    border-style: none;
+    -webkit-box-shadow: 1px 1px 1px #eef0f1;
+            box-shadow: 1px 1px 1px #eef0f1;
+  }
+  .title-article {
+    color: #08090a;
+    font-size: 20px !important;
+    font-weight: bold;
+    margin: 0.05rem 3rem !important;
+  }
+  .mention-article {
+    margin-left: 3rem !important;
+  }
+  .inside-article {
+    margin-left: 3rem !important;
+    padding-right: 0.5rem !important;
+    padding-bottom: 0.4rem !important;
   }
 }
 
@@ -394,24 +581,353 @@ img {
     background-color: #eef0f1;
     border-radius: 50%;
   }
+  .likes-hover:hover {
+    background-color: #f4f4fa;
+    border-radius: 8px;
+    color: #08090a;
+  }
+  .likes-hover h4 {
+    color: #4d5766;
+    font-weight: 400;
+    font-size: 0.8rem !important;
+  }
+  .likes-hover h3 {
+    color: #4d5766;
+    font-weight: 400;
+    font-size: .8rem;
+    display: initial !important;
+  }
+  .likes-hover a h5 {
+    font-size: .7rem;
+    color: #4d5766;
+    font-weight: 400;
+  }
   .title-articleFull {
     color: #08090a;
-    font-size: 30px !important;
+    font-size: 27px !important;
     font-weight: bold;
     margin: 0px;
     margin-left: 3rem !important;
     margin-right: 3rem !important;
+    margin-bottom: 0.5rem !important;
+  }
+  .button {
+    height: 100%;
+    background-color: #d2d6db;
+    border-style: none;
+    -webkit-box-shadow: 1px 1px 1px #eef0f1;
+            box-shadow: 1px 1px 1px #eef0f1;
   }
   .title-article {
     color: #08090a;
-    font-size: 24px !important;
+    font-size: 20px !important;
     font-weight: bold;
-    margin: 0px;
-    margin-left: 3rem !important;
-    margin-right: 3rem !important;
+    margin: 0.05rem 3rem !important;
   }
   .mention-article {
     margin-left: 3rem !important;
   }
+  .inside-article {
+    margin-left: 3rem !important;
+    padding-right: 0.5rem !important;
+    padding-bottom: 0.4rem !important;
+  }
+}
+
+/*Jonathan*/
+.title-articleFull-2 {
+  color: #08090a;
+  font-size: 30px !important;
+  font-weight: bold !important;
+  margin: 0px;
+  margin-bottom: 16px;
+}
+
+@media screen and (min-width: 992px) {
+  .title-articleFull-2 {
+    color: #08090a;
+    font-size: 48px !important;
+    font-weight: bold !important;
+    margin: 0px;
+    margin-bottom: 16px;
+  }
+}
+
+.div-title-articleFull-2 {
+  padding-left: 64px;
+  padding-top: 32px;
+  padding-right: 64px;
+}
+
+.bg-yellow {
+  background-color: yellow;
+  text-decoration: none !important;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.bg-green {
+  background-color: #57d700;
+  color: white !important;
+  text-decoration: none !important;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.bg-blanco {
+  background-color: white;
+  text-decoration: none !important;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+.mention-article-2 {
+  margin-top: 0px !important;
+  font-size: 14px;
+}
+
+.mention-article-2 a {
+  color: #4d5766 !important;
+}
+
+.text-article h2 {
+  font-weight: bold;
+}
+
+/*Card Autor*/
+.card-autor {
+  -webkit-box-shadow: 0px 0px 1px 1px #d2d6db;
+          box-shadow: 0px 0px 1px 1px #d2d6db;
+  background-color: white;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.card-autor .franja-rosa {
+  background-color: #bb216e;
+  height: 31px;
+}
+
+.card-autor .data-autor {
+  padding-left: 16px;
+  padding-right: 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -20px;
+  height: 60px;
+}
+
+.card-autor .data-autor .photo-autor {
+  width: 50px !important;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.card-autor .data-autor .name-autor {
+  color: #202428;
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-bottom: 34px;
+  font-size: 20px;
+}
+
+.card-autor .description-autor {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.card-autor .description-autor .txt-card-autor {
+  color: #4d5760;
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.card-autor .description-autor .txt-card-autor span {
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.card-autor .description-autor .txt-card-autor span.at {
+  opacity: 0.5;
+  font-size: 16px;
+}
+
+@media screen and (min-width: 992px) {
+  .card-autor .description-autor .btn-follow {
+    background-color: #3b49df;
+    color: white;
+    border: 0px;
+    border-radius: 4px;
+    font-size: 17px;
+    padding: 8px 14px;
+    width: 100%;
+  }
+  .card-autor .description-autor .btn-follow:hover {
+    background-color: #323ebe;
+    cursor: pointer;
+  }
+}
+
+.card-more-autor {
+  -webkit-box-shadow: 0px 0px 1px 1px #d2d6db;
+          box-shadow: 0px 0px 1px 1px #d2d6db;
+  background-color: white;
+  margin-top: 1vw;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.card-more-autor header {
+  border-bottom: 1px solid #eef0f1;
+}
+
+.card-more-autor header h5 {
+  color: #202428;
+  margin: 15px;
+  font-size: 20px;
+}
+
+.card-more-autor header h5 a {
+  color: #3b49df;
+  text-decoration: none;
+}
+
+.card-more-autor .container-tags {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 23px;
+}
+
+.card-more-autor .container-tags a {
+  color: #08090a;
+  font-size: 16px;
+  line-height: 150%;
+  text-decoration: none;
+}
+
+.card-more-autor .container-tags a:hover {
+  color: #3b49df;
+}
+
+.card-more-autor .container-tags .tags {
+  margin-top: 18px;
+  padding-bottom: 23px;
+}
+
+.card-more-autor .container-tags .tags a {
+  color: #64707d;
+  font-size: 14px;
+}
+
+.card-more-autor .container-tags .card-more-autor {
+  -webkit-box-shadow: 0px 0px 1px 1px #d2d6db;
+          box-shadow: 0px 0px 1px 1px #d2d6db;
+  background-color: white;
+  margin-top: 1vw;
+  border-radius: 7px;
+  overflow: hidden;
+}
+
+.card-more-autor .container-tags .card-more-autor header {
+  border-bottom: 1px solid #eef0f1;
+}
+
+.card-more-autor .container-tags .card-more-autor header h5 {
+  color: #202428;
+  margin: 15px;
+  font-size: 20px;
+}
+
+.card-more-autor .container-tags .card-more-autor header h5 a {
+  color: #3b49df;
+  text-decoration: none;
+}
+
+.card-more-autor .container-tags .card-more-autor .container-tags {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 23px;
+}
+
+.card-more-autor .container-tags .card-more-autor .container-tags a {
+  color: #08090a;
+  font-size: 16px;
+  line-height: 150%;
+  text-decoration: none;
+}
+
+.card-more-autor .container-tags .card-more-autor .container-tags a:hover {
+  color: #3b49df;
+}
+
+.card-more-autor .container-tags .card-more-autor .container-tags .tags {
+  margin-top: 18px;
+  padding-bottom: 23px;
+}
+
+.card-more-autor .container-tags .card-more-autor .container-tags .tags a {
+  color: #64707d;
+  font-size: 14px;
+}
+
+.menu-left {
+  margin-top: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-left-item {
+  margin-bottom: 20px;
+}
+
+.menu-left-item .icon-left-bar {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  padding-top: 5px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.menu-left-item .icon-left-bar svg {
+  fill: #363d44;
+}
+
+.menu-left-item .icon-left-bar:hover {
+  cursor: pointer;
+}
+
+.menu-left-item .icon-left-bar#v1:hover {
+  background-color: rgba(247, 107, 107, 0.281);
+}
+
+.menu-left-item .icon-left-bar#v1:hover svg {
+  fill: red;
+}
+
+.menu-left-item .icon-left-bar#v2:hover {
+  background-color: rgba(71, 250, 226, 0.199);
+}
+
+.menu-left-item .icon-left-bar#v2:hover svg {
+  fill: #05afaf;
+}
+
+.menu-left-item .icon-left-bar#v3:hover {
+  background-color: rgba(66, 63, 236, 0.185);
+}
+
+.menu-left-item .icon-left-bar#v3:hover svg {
+  fill: navy;
+}
+
+.menu-left-item .icon-left-bar#v4:hover {
+  background-color: rgba(226, 222, 222, 0.336);
+}
+
+.menu-left-item .icon-left-bar#v4:hover svg {
+  fill: #08090a;
 }
 /*# sourceMappingURL=style.css.map */

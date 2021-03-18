@@ -21,6 +21,9 @@ $GrisButtonHover: rgb(148, 153, 158);
 img{
     width: 100% !important;
 }
+a{
+    text-decoration: none!important;
+}
 
 .container-main{
     padding-top: 70px;
@@ -141,6 +144,7 @@ img{
     &:hover{
         background-color: #323ebe !important;
         cursor: pointer;
+        color: $Blanco;
     }       
 }
 
@@ -149,10 +153,17 @@ img{
     .avatar-post{
         margin-left: 0px;
         margin-right: 0px;
+        padding-bottom: .5rem!important;
     }
     .text-avatar-post{
         margin-top: auto;
         margin-bottom: auto;
+        opacity: 80%;
+        color: $GrisOscuroTexto!important;
+        &:hover{
+            opacity: 100%;
+
+        }
     }
     .avatar-post .jb-img-avatar{
         width: 32px !important;
@@ -162,9 +173,67 @@ img{
         margin-top: auto;
         margin-bottom: auto;   
     }
+    .f-14{
+        margin-bottom: 0px;
+        font-size: 14px;
+        font-weight: 600;
+        color: $GrisOscuroTexto;
+    }
     .f-12{
         margin-bottom: 0px;
-        font-size: 12px;
+        font-size: 11px;
+    }
+
+    .comment-article{
+        width:70%;
+        height: auto;
+    }
+    .text-avatar-comment{
+            margin-top: auto;
+            margin-bottom: auto;
+            opacity: 80%;
+            color: $GrisOscuroTexto!important;
+            &:hover{
+                opacity: 100%;
+            }
+        }
+        .avatar-post-comment {
+            .f-14{
+                margin-bottom: 0px;
+                font-size: 12px !important;
+                font-weight: 600;
+                color: $GrisOscuroTexto;
+            }
+            .f-12{
+                margin-bottom: 0px;
+                font-size: 10px;
+                color: $GrisOscuroTexto;
+            }
+             .jb-img-avatar{
+            width: 25px !important;
+            height: 25px !important;
+            margin-left: 0px;
+            margin-right: 5px;
+            margin-top: auto;
+            margin-bottom: auto;
+
+             }
+         }
+    .avatar-comment{
+            font-size: small;
+            margin-left: 2rem;
+     }
+
+    .likes-hover-comment{
+        font-size: .8rem;
+        color: $GrisTexto;
+        font-weight: 400;
+        margin-left: 2rem;
+        &:hover{
+            background-color:$GrisOscuro; 
+            border-radius: 8px;
+            color: $Negro;
+        }
     }
     .title-articleFull{
         color: $Negro;
@@ -192,7 +261,7 @@ img{
     }
     .mention-article{
         margin-left: 1rem;
-        font-size: 14px;
+        font-size: .8rem;
         a{
             color: $GrisTexto !important;
         }
@@ -205,6 +274,56 @@ img{
     .btn-article{
         margin-right: 20px;
         height: 30px;
+    }
+    .yellow{
+        background-color:rgb(255, 255, 0) ;
+        opacity: 60%;
+        color: orangered!important;
+    }
+    .blue{
+        background-color:lightblue;
+        opacity: 60%;
+        color: navy!important;
+    }
+    .green{
+        background-color: lightgreen;
+        opacity: 70%;
+        color: darkslategray;
+    }
+    .inside-article {
+        margin-left: .1rem;
+    }
+    .likes{
+        svg{
+            opacity: 70%;
+        }
+        h4{
+            color: $GrisTexto;
+            font-weight: 400;
+            font-size: .9rem;
+        }
+        h3{
+            display: none;
+        }
+        a {
+            h5{
+                font-size: .6rem;
+                color:$GrisTexto;
+                font-weight: 400;
+            }
+            button{
+                background-color: $GrisButton;
+                font-size: smaller;
+                border-style: none;
+                font-weight: 370;
+                letter-spacing:.5;
+                padding:.3rem .6rem;
+                box-shadow: 1px 1px 1px $Gris;
+                &:hover{
+                    background-color:$GrisButtonHover;
+                }
+             }
+       }
     }
 }
 
@@ -287,6 +406,7 @@ img{
 .my-footer{
     background-color: $GrisOscuro;
     padding: 20px;
+    padding-bottom: 60px;
     .my-footer-container{
         max-width: 768px;
         background-color:$GrisOscuro;
@@ -338,6 +458,9 @@ img{
 }
 
 @media screen and (min-width: 700px){
+    .my-footer{
+        padding-bottom: 10px;
+    }
     .main-menu{
         .logo-navbar{
             margin-left: 0px;
@@ -346,6 +469,63 @@ img{
     .search-bar{
         width:300px;
         margin-left: -70px;  
+    }
+   
+    .likes-hover{
+    
+        &:hover{
+            background-color: rgb(244, 244, 250); 
+            border-radius: 8px;
+            color: $Negro;
+        }
+        h4{ 
+            color: $GrisTexto;
+            font-weight: 400;
+            font-size: .8rem!important;
+        }
+        h3{ 
+            color: $GrisTexto;
+            font-weight: 400;
+            font-size: .8rem;
+            display: initial!important;
+        }
+        a {
+            h5{
+                font-size: .7rem;
+                color:$GrisTexto;
+                font-weight: 400;
+            }
+        }
+
+     }
+     .title-articleFull{
+        color: $Negro;
+        font-size: 27px !important;
+        font-weight: bold;
+        margin: 0px;
+        margin-left: 3rem !important;
+        margin-right: 3rem !important;
+        margin-bottom: .5rem!important;
+    }
+    .button{
+        height: 100%;
+        background-color: $GrisButton;
+        border-style: none;
+        box-shadow: 1px 1px 1px $Gris;
+    }
+    .title-article{
+        color: $Negro;
+        font-size: 20px !important;
+        font-weight: bold;
+        margin: .05rem 3rem!important;
+    }
+    .mention-article{
+        margin-left: 3rem !important;
+    }
+    .inside-article{ 
+        margin-left: 3rem!important;
+        padding-right: .5rem!important;
+        padding-bottom: .4rem!important;
     }
 }
 
@@ -375,23 +555,311 @@ img{
             }
         }
     }
+
+    .likes-hover{
+    
+        &:hover{
+            background-color: rgb(244, 244, 250); 
+            border-radius: 8px;
+            color: $Negro;
+        }
+        h4{ 
+            color: $GrisTexto;
+            font-weight: 400;
+            font-size: .8rem!important;
+        }
+        h3{ 
+            color: $GrisTexto;
+            font-weight: 400;
+            font-size: .8rem;
+            display: initial!important;
+        }
+        a {
+            h5{
+                font-size: .7rem;
+                color:$GrisTexto;
+                font-weight: 400;
+            }
+        }
+
+     }
     .title-articleFull{
         color: $Negro;
-        font-size: 30px !important;
+        font-size: 27px !important;
         font-weight: bold;
         margin: 0px;
         margin-left: 3rem !important;
         margin-right: 3rem !important;
+        margin-bottom: .5rem!important;
+    }
+    .button{
+        height: 100%;
+        background-color: $GrisButton;
+        border-style: none;
+        box-shadow: 1px 1px 1px $Gris;
     }
     .title-article{
         color: $Negro;
-        font-size: 24px !important;
+        font-size: 20px !important;
         font-weight: bold;
-        margin: 0px;
-        margin-left: 3rem !important;
-        margin-right: 3rem !important;
+        margin: .05rem 3rem!important;
     }
     .mention-article{
         margin-left: 3rem !important;
     }
+    .inside-article{ 
+        margin-left: 3rem!important;
+        padding-right: .5rem!important;
+        padding-bottom: .4rem!important;
+    }
 }
+
+/*Jonathan*/
+
+.title-articleFull-2{
+    color: $Negro;
+    font-size: 30px !important;
+    font-weight: bold !important;
+    margin: 0px;
+    margin-bottom: 16px;
+}
+@media screen and (min-width: 992px){
+    .title-articleFull-2{
+        color: $Negro;
+        font-size: 48px !important;
+        font-weight: bold !important;
+        margin: 0px;
+        margin-bottom: 16px;
+    }
+}
+.div-title-articleFull-2{
+    padding-left: 64px;
+    padding-top: 32px;
+    padding-right: 64px;
+}
+
+
+.bg-yellow{
+    background-color: yellow;
+    text-decoration: none !important;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.bg-green{
+    background-color: #57d700;
+    color:$Blanco !important;
+    text-decoration: none !important;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+.bg-blanco{
+    background-color: $Blanco;
+    text-decoration: none !important;
+    padding: 2px;
+    border-radius: 5px;
+}
+.mention-article-2{
+    margin-top: 0px !important;
+    font-size: 14px;
+    a{
+        color: $GrisTexto !important;
+    }
+}
+.text-article h2{
+    font-weight:bold;
+
+}
+
+/*Card Autor*/
+
+.card-autor{
+    box-shadow: 0px 0px 1px 1px $GrisOscuro;
+    background-color: $Blanco; 
+    border-radius: 7px;
+    overflow: hidden;
+    .franja-rosa{
+        background-color: rgb(187,33,110);
+        height: 31px;
+    }
+    .data-autor{
+        padding-left: 16px;
+        padding-right: 16px;
+        align-items: center;
+        margin-top: -20px;
+        height: 60px;
+        .photo-autor{
+            width: 50px !important;
+            height: 50px;
+            border-radius: 50%;
+        }
+        .name-autor{
+            color: #202428;
+            margin-top: 50px;
+            margin-left: 10px;
+            margin-bottom: 34px;
+            font-size: 20px;
+        }
+    }
+    .description-autor{
+        padding-left: 16px;
+        padding-right: 16px;
+        .txt-card-autor{
+            color: #4d5760;
+            font-size: 16px;
+            line-height: 150%;
+            span{
+                font-weight: 600;
+                font-size: 13px;
+                &.at{
+                    opacity: 0.5;
+                    font-size: 16px;
+                }
+            }
+        }
+        .btn-follow{
+            @media screen and (min-width: 992px){
+                background-color: $Azul;
+                color: $Blanco;
+                border: 0px;
+                border-radius: 4px;
+                font-size: 17px;
+                padding: 8px 14px;
+                width: 100%;
+                &:hover{
+                    background-color: #323ebe;
+                    cursor: pointer;
+                }
+            }         
+        }
+    }
+}
+
+.card-more-autor{
+    box-shadow: 0px 0px 1px 1px $GrisOscuro;
+    background-color: $Blanco; 
+    margin-top: 1vw;
+    border-radius: 7px;
+    overflow: hidden;
+    header{
+        border-bottom: 1px solid #eef0f1;
+        h5{
+            color: #202428;
+            margin: 15px;
+            font-size: 20px;
+            a{
+                color: $Azul;
+                text-decoration: none;
+            }
+        }
+
+    }
+    .container-tags{
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 23px;
+        a{
+            color: $Negro;
+            font-size: 16px;
+            line-height: 150%;
+            text-decoration: none;
+            &:hover{
+                color: $Azul;
+            }
+        }
+        .tags{
+            margin-top: 18px;
+            padding-bottom: 23px;
+            a{
+                color: #64707d;
+                font-size: 14px;
+            }
+        }
+        .card-more-autor{
+            box-shadow: 0px 0px 1px 1px $GrisOscuro;
+            background-color: $Blanco; 
+            margin-top: 1vw;
+            border-radius: 7px;
+            overflow: hidden;
+            header{
+                border-bottom: 1px solid #eef0f1;
+                h5{
+                    color: #202428;
+                    margin: 15px;
+                    font-size: 20px;
+                    a{
+                        color: $Azul;
+                        text-decoration: none;
+                    }
+                }
+
+            }
+            .container-tags{
+                padding-left: 16px;
+                padding-right: 16px;
+                padding-top: 23px;
+                a{
+                    color: $Negro;
+                    font-size: 16px;
+                    line-height: 150%;
+                    text-decoration: none;
+                    &:hover{
+                        color: $Azul;
+                    }
+                }
+                .tags{
+                    margin-top: 18px;
+                    padding-bottom: 23px;
+                    a{
+                        color: #64707d;
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+.menu-left {
+    margin-top: 40px;
+    align-items: center;
+    
+}
+
+    .menu-left-item{
+        margin-bottom: 20px;
+        .icon-left-bar{
+            svg{
+                fill: #363d44;
+            }
+            border-radius: 50%;
+            width: 35px;
+            height:35px;
+            padding-top: 5px;
+            padding-left: 0px;
+            padding-right: 0px;
+            &:hover{
+                cursor: pointer;
+            }
+            &#v1{&:hover{
+                    background-color: rgba(247, 107, 107, 0.281); 
+                    svg{
+                        fill: red;}}}
+            &#v2{&:hover{
+                    background-color: rgba(71, 250, 226, 0.199); 
+                    svg{
+                        fill: rgb(5, 175, 175);}}}
+            &#v3{&:hover{background-color: rgba(66, 63, 236, 0.185); 
+                    svg{
+                        fill: navy;}}}
+            &#v4{&:hover{background-color: rgba(226, 222, 222, 0.336);
+                svg{
+                fill: $Negro;}}}
+            
+        }
+    }
