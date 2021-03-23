@@ -6,6 +6,13 @@ Peso superior al normal : IMC 25.0 – 29.9
 Obesidad : IMC Más de 30.0
 ********************************************************/
 
+var pesoPorDebajo
+var pesoNormal
+var pesoPorEnsima
+var Obesidad
+
+
+
 
 
 
