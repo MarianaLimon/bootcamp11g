@@ -20,6 +20,8 @@ function Koders(){
     //imprimir cada uno de los koders
     var kodesList = arrayKoders.join("\n");
     console.log(`Lista de koders:\n${kodesList}`)
+
+    editKoders();
 }
 Koders();
 
@@ -27,14 +29,18 @@ Koders();
 /* permitir borrar un koder aleatorio de la lista */
 
 function editKoders(){
-    let addKoder = prompt("¿Desea agregar o borrar algún koder?")
-    let dropKoder = Math.floor(Math.random()*(arrayKoders.length)+1);
-    if (addKoder === "agregar") {
-        Koders();       
-    } else if(addKoder === "borrar"){
+    let addKoder = prompt("¿Desea agregar o borrar algún koder?");
+    (addKoder === "agregar" ? Koders() : dropKoders(addKoder))
+}
+
+function dropKoders(action){
+    if (action === "borrar"){
+        let dropKoder = Math.floor(Math.random()*(arrayKoders.length)+1);
         arrayKoders.splice(dropKoder,1)
         let kodesList = arrayKoders.join("\n")
         console.log(`Se elimino un koder\nLa nueva lista es:\n${kodesList}`)
+    } else{
+        alert("Opción no valida");
     }
+    editKoders()
 }
-editKoders();
