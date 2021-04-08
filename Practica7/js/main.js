@@ -12,7 +12,6 @@ var kebabCase = phrase.replace(/ /g, "-");
 console.log("kebab_case: \n" + kebabCase)
 
 /* 3.- Mostrar la misma frase con todas las vocales en mayúscula */
-   
 var mayus = phrase.replace(/[áa]|[ée]|[íi]|[óo]|[úu]/gi, function (x) {
     return x.toUpperCase();
   });
