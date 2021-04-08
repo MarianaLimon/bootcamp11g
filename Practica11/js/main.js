@@ -87,9 +87,8 @@ let mentorsArray = [
 ]
 
 
-
 const deleteMentor = event => {
-    console.log( event.target )
+    //console.log( event.target )
     let mentorIndex = event.target.dataset.mentorIndex 
     mentorsArray.splice(mentorIndex,1)
     console.log( mentorsArray )
@@ -118,15 +117,13 @@ const printTable = () => {
     }
 
     let tbody = document.getElementById("tableBodyOk")
-
-    let avgUpdate = document.getElementById("promedio")
-
-    while (avgUpdate.lastElementChild) {
-        avgUpdate.removeChild( avgUpdate.lastElementChild );
-    }
-
     while (tbody.lastElementChild) {
         tbody.removeChild( tbody.lastElementChild );
+    }
+
+    let avgUpdate = document.getElementById("promedio")
+    while (avgUpdate.lastElementChild) {
+        avgUpdate.removeChild( avgUpdate.lastElementChild );
     }
 
     mentorsArray.forEach((item, index) => {
@@ -178,7 +175,6 @@ const printTable = () => {
 
         document.getElementById("tableBodyOk").appendChild(itemRow)
 
-
         let buttons = document.querySelectorAll(".btn-delete")
 
         buttons.forEach( button => {
@@ -186,19 +182,31 @@ const printTable = () => {
         })
     })
     
-    
-
     let totalAvgElement = document.createElement("h3")
     let totalAvgText = document.createTextNode("Promedio General:\t" + mentorsAverage(mentorsArray))
     totalAvgElement.appendChild(totalAvgText)
     
     document.getElementById("promedio").appendChild(totalAvgElement)
-    
-    
 }
-
-
 printTable()
 
+let newKoder = {}
+
+const getAddKoder = () => {
+    //let newKoder = 
+    let nameInput = document.getElementById("koder-name").value
+    let htmlInput = document.getElementById("score-html").value
+    let cssInput = document.getElementById("score-css").value
+    let jsInput = document.getElementById("score-js").value
+    let reactInput = document.getElementById("score-react").value
+    console.log(nameInput, htmlInput, cssInput, jsInput, reactInput)
+    //console.log(newKoder) 
+}
+
+document.getElementById("save-koder").addEventListener("click", getAddKoder)
 
 
+function Koder(name, scores) {
+    this.name = name;
+    this.score = scores;
+}
