@@ -1,0 +1,79 @@
+body{ background: #4A4948;}
+
+.square {
+  width: 300px;
+  height: 300px;
+  background-color: red;
+  margin: auto;
+}
+
+.rectangle {
+  width: 500px;
+  height: 300px;
+  background-color: greenyellow;
+  margin: auto;
+}
+
+.circle {
+  width: 300px;
+  height: 300px;
+  background-color: skyblue;
+  border-radius: 50%;
+  margin: auto;
+}
+
+.element { 
+  margin: auto;
+  height: calc(300px + 4rem);
+  padding: 2rem;
+}
+
+.controls-wrapper label:not(:first-of-type) {
+  margin-left: 1rem;
+}
+
+.galery {
+  margin: auto !important;
+  width: 600px;
+  height: 350px;
+}
+
+.btns {
+  width: 80vh;
+  margin: auto;
+}
+
+.btns button {
+  margin: 0 1rem;
+}
+/*# sourceMappingURL=style.css.map */
+
+@media screen and (min-width: 770px){
+  .element {
+    width: 80vh;
+  }
+}
+
+@media screen and (max-width: 770px){
+  .galery {
+    width: 100% !important;
+    height: auto !important;
+  }
+  .btns {
+    width: 100% !important;
+  }
+  .square {
+    width: 250px;
+    height: 250px;
+    margin-top: 1.5rem;
+  }
+  .rectangle {
+    width: 100px;
+    height: 300px;
+  }
+  .circle {
+    width: 250px;
+    height: 250px;
+    margin-top: 1.5rem;
+  }
+}
