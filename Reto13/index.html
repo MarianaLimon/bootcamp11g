@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <title>Reto12</title>
+</head>
+
+<body>
+
+    <div class="modal fade" id="edition-modal" tabindex="-1" aria-labelledby="edition-modal-label" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="edition-modal-label">Editar Album</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <h3 class="py-3">Agregar Mentor</h3>
+                        <div class="form-group">
+                            <label for="name">Nombre</label>
+                            <input id="nombre" type="text" class="form-control" name="name"  placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="age">Edad</label>
+                            <input id="age" type="text" class="form-control"  name="age" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="tel">Teléfono</label>
+                            <input id="telephone" type="text" class="form-control" name="tel" placeholder="">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                    <button id="save-changes" type="button" class="btn btn-primary">Guardar Cambios</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-4 pt-5">
+                <form class="bg-dark text-white p-4 border form-add-mentors">
+                    <h3 class="pb-3">Agregar Mentor</h3>
+                    <div class="form-group">
+                      <label for="name">Nombre</label>
+                      <input id="nombre" type="text" class="form-control" name="name"  placeholder="">
+                    </div>
+                    <div class="form-group">
+                      <label for="age">Edad</label>
+                      <input id="age" type="text" class="form-control"  name="age" placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="tel">Teléfono</label>
+                        <input id="telephone" type="text" class="form-control" name="tel" placeholder="">
+                    </div>
+                    <button type="button" id="save-mentor" class="btn btn-success mt-3 mb-2 w-100">Enviar</button>
+                  </form>
+            </div>
+            <div class="col-12 col-md-8 pt-5">
+                <h2 class="text-center pb-1">Mentores agregados</h2>
+                <div class="row mentors-cards-container">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+        crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
